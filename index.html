@@ -375,13 +375,19 @@
 }
 
 .modal-image-wrap{
-    border:1px solid rgba(184,86,0,0.25);
-    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-top:10px;
 }
 
 .modal-image{
-    width:100%;
+    width:85%;
+    max-width:700px;
     display:block;
+    margin:auto;
+    border:1px solid rgba(184,86,0,0.28);
+    box-shadow:0 0 18px rgba(184,86,0,0.08);
 }
 
 .modal-actions{
@@ -956,12 +962,14 @@
           <li>KS Statistic</li>
           <li>Gini Coefficient</li>
         </ul>
-    <p class="model-text>
+        
+    <p class="model-text">
       to better measure the model’s ability
 to separate risky borrowers from reliable applicants
 while minimizing financial exposure caused
 by false negatives.
       </p>
+      
       </div>
 <!-- MODEL SELECTION -->
       <div class="modal-section">
@@ -975,11 +983,13 @@ by false negatives.
 ROC-AUC and KS scores, Logistic Regression
 was selected as the final model due to its
 higher recall and interpretability.
-
+        </p>
+<p class="modal-text">
 In credit risk modeling, minimizing false negatives
 is critical because failing to identify high-risk
 borrowers can lead to significant financial loss.
-
+</p>
+<p class="modal-text">
 Additionally, Logistic Regression provides:
         </p>
 
