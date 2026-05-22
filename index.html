@@ -956,9 +956,39 @@
           <li>KS Statistic</li>
           <li>Gini Coefficient</li>
         </ul>
-
+    <p class="model-text>
+      to better measure the model’s ability
+to separate risky borrowers from reliable applicants
+while minimizing financial exposure caused
+by false negatives.
+      </p>
       </div>
+<!-- MODEL SELECTION -->
+      <div class="modal-section">
 
+        <p class="modal-section-title">
+          > MODEL SELECTION
+        </p>
+
+        <p class="modal-text">
+          Although XGBoost achieved slightly higher
+ROC-AUC and KS scores, Logistic Regression
+was selected as the final model due to its
+higher recall and interpretability.
+
+In credit risk modeling, minimizing false negatives
+is critical because failing to identify high-risk
+borrowers can lead to significant financial loss.
+
+Additionally, Logistic Regression provides:
+        </p>
+
+        <ul class="modal-list">
+          <li>transparent decision-making</li>
+          <li>easier regulatory interpretation</li>
+          <li>stronger alignment with industry practices</li>
+        </ul>
+      </div>
       <!-- RESULTS -->
       <div class="modal-section">
 
@@ -969,7 +999,7 @@
         <div class="modal-metrics">
 
           <div class="metric-box">
-            <span class="metric-value">0.99</span>
+            <span class="metric-value">0.98</span>
             <span class="metric-label">ROC-AUC</span>
           </div>
 
@@ -991,7 +1021,28 @@
         </div>
 
       </div>
+      <!-- BUSINESS INSIGHTS -->
+      <div class="modal-section">
 
+        <p class="modal-section-title">
+          > BUSINESS INSIGHTS
+        </p>
+
+        <p class="modal-text">
+          High loan-to-income ratio and credit utilization
+were strong indicators of default risk,
+suggesting financial stress among borrowers.
+
+Past delinquency behaviour significantly increased
+the probability of default, while home ownership
+was associated with greater financial stability.
+
+These findings aligned closely with real-world
+credit risk modeling principles and validated
+the model’s predictive behavior.
+        </p>
+
+      </div>
       <!-- DEPLOYMENT -->
       <div class="modal-section">
 
@@ -1043,6 +1094,16 @@
           <img
             src="images/credit-risk-app.png"
             alt="Credit Risk Streamlit App"
+            class="modal-image"
+          >
+          <img
+            src="images/credit-risk-app.png"
+            alt="ROC Curve Analysis"
+            class="modal-image"
+          >
+          <img
+            src="images/credit-risk-app.png"
+            alt="Feature Importance Visualization"
             class="modal-image"
           >
 
